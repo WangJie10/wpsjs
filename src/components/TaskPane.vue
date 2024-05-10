@@ -46,6 +46,7 @@ export default {
   mounted() {
       axios.get('/.debugTemp/NotifyDemoUrl').then((res) => {
           this.DemoSpan = res.data;
+          console.log("🚀 ~ axios.get ~ this.DemoSpan:", this.DemoSpan)
       });
   }
 }
